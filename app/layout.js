@@ -1,13 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import Provider from "./context/AuthContext";
-const geistSans = Geist({
+import Navbar from "./components/navbar";
+const geistSans = Poppins({
   variable: "--font-geist-sans",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Roboto_Condensed({
   variable: "--font-geist-mono",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -23,9 +26,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Provider>
-        {children}
+          <Navbar />
+          {children}
         </Provider>
-        
       </body>
     </html>
   );
