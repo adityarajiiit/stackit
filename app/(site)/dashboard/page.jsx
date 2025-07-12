@@ -1,19 +1,21 @@
-'use client'
-import { useSession,signOut } from "next-auth/react"
-const dashboard=()=>{
-    const session=useSession()
-    
-    if(session.status==="loading"){
-        return <div>Loading...</div>
-    }
-    return(
-        <div>
-            <h1>Dashboard</h1>
-            <p>Status: {session.status}</p>
-            
-            <p>Hi {session?.data?.user?.email}</p>
-            {session?.data?.user?.email && <button onClick={()=>signOut()}>Sign Out</button>}
-        </div>
-    )
-}
-export default dashboard
+"use client";
+
+import Commenttable from "@/app/components/commenttable";
+
+const dashboard = () => {
+  const comments = [
+    {
+      content:
+        "Get answers to your toughest questions from real people who care. Ask in plain language and receive thoughtful responses.",
+      author: "Robert doe",
+      date: "monday 2 april 2025",
+      replycount: 3,
+    },
+  ];
+  return (
+    <div>
+      <Commenttable comments={comments} />
+    </div>
+  );
+};
+export default dashboard;
