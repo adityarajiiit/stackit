@@ -1,3 +1,13 @@
+## StackIt – A Minimal Q&A Forum Platform
+
+## Team Members –
+
+- **Aditya Raj** - aditya0405raj@gmail.com
+
+- **Aryan Choudhary** -
+aryan.2023ug1074@iiitranchi.ac.in
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
