@@ -1,5 +1,4 @@
 ## StackIt – A Minimal Q&A Forum Platform
-Overview
 
 ## Team Members –
 
